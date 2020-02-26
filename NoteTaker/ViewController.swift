@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addButton(_ sender: Any) {
+        UserDefaults.standard.set(taskText.text, forKey:  "task")
         
         let newtask = taskText.text
         todoLabel.text = newtask
